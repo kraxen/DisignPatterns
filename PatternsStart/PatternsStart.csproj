@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BehaviorPatterns\BehaviorPatterns.csproj" />
+    <ProjectReference Include="..\GenerativePatterns\GenerativePatterns.csproj" />
+    <ProjectReference Include="..\SOLID\SOLID.csproj" />
+    <ProjectReference Include="..\StructuralPatterns\StructuralPatterns.csproj" />
+  </ItemGroup>
+
+</Project>
