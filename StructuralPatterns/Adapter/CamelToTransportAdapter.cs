@@ -8,7 +8,7 @@ namespace StructuralPatterns.Adapter
     // Адаптер от Camel к ITransport
     public class CamelToTransportAdapter : ITransport
     {
-        Camel camel;
+        readonly Camel camel;
         public CamelToTransportAdapter(Camel c)
         {
             camel = c;

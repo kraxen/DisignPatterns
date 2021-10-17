@@ -1,0 +1,30 @@
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace StructuralPatterns.Proxy
+{
+    public class BookStore : IBook
+    {
+        PageContext db;
+        public BookStore()
+        {
+            db = new PageContext();
+        }
+        public Page GetPage(int number)
+        {
+            return db.Pages.FirstOrDefault(p => p.Number == number);
+        }
+        public void AddPages(List<Page> pagesList)
+        {
+            db.Pages.AddRange(pagesList);
+        }
+        public void SaveChanges()
+        {
+            db.SaveChanges();
+        }
+        public void Dispose()
+        {
+            db.Dispose();
+        }
+    }
+}

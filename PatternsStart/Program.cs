@@ -14,7 +14,12 @@ namespace PatternsStart
             Show("Structural Patterns", new List<IPattern>
             {
                 new Decorator(),
-                new Adapter()
+                new Adapter(),
+                new Facade(),
+                new Composite(),
+                new Bridge(),
+                new Flyweight(),
+                new Proxy()
             });
 
             Show("Behavior Patterns", new List<IPattern>
